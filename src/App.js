@@ -10,7 +10,7 @@ import Films from './componants/Films';
 
 function App() {
   return (
-    <div className="">
+    <div className="bg-slate-50">
       <NavBar />
       <Routes>
         <Route path= "/" element={<Home />} />
