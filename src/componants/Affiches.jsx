@@ -40,8 +40,8 @@ function Affiches() {
 
         <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
            {affiches.map((item) => (
-            <li key={item.img} className="p-6">
-                <img src={item.img} alt="" className='rounded-lg h-96 w-full object-cover'/>
+            <li key={item.img} className="p-6 mx-auto">
+                <img src={item.img} alt="" className='transition-all duration-300 rounded-lg h-auto max-w-sm filter grayscale hover:grayscale-0'/>
             </li>
            ))} 
         </ul>

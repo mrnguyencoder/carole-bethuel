@@ -2,13 +2,10 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    './styles/tailwind.config.js',
   ],
   theme: {
     extend: {},
   },
   plugins: [],
-}
-// prettier.config.js
-module.exports = {
-  tailwindConfig: './styles/tailwind.config.js',
 }
