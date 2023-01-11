@@ -6,7 +6,7 @@ import Contact from './componants/Contact';
 import Footer from './componants/Footer';
 import Affiches from './componants/Affiches';
 import MentionsLegales from './componants/MentionsLegales';
-import Films from './componants/Films';
+import Films from './componants/FilmDetails';
 
 function App() {
   return (
