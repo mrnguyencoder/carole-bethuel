@@ -54,10 +54,6 @@ function Home() {
     ]
   return (
     <section>
-        {/* <div className="text-center p-8">
-            <h1 className="text-6xl font-extrabold">carole bethuel</h1>
-            <h2 className="text-xl tracking-wider">photographe de plateau</h2>
-        </div> */}
         <div className="">
             <ul className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
                 {photos.map((item) => (
