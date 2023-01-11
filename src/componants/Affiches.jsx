@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import a1 from '../assets/a1.jpeg';
 import a2 from '../assets/a2.jpeg';
 import a3 from '../assets/a3.jpeg';
@@ -9,15 +10,15 @@ import a6 from '../assets/a6.jpeg';
 function Affiches() {
     const affiches = [
         {
-            name: ``,
+            name: `name-1`,
             img: a1,
         },
         {
-            name: ``,
+            name: `name-2`,
             img: a2,
         },
         {
-            name: ``,
+            name: `name-3`,
             img: a3,
         },
         {
@@ -41,7 +42,9 @@ function Affiches() {
         <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
            {affiches.map((item) => (
             <li key={item.img} className="p-6 mx-auto">
-                <img src={item.img} alt="" className='transition-all duration-300 rounded-lg h-auto max-w-sm filter grayscale hover:grayscale-0'/>
+                <Link to=":{item.name}">
+                    <img src={item.img} alt="" className='transition-all duration-300 rounded-lg h-auto max-w-sm filter grayscale hover:grayscale-0'/>
+                </Link>
             </li>
            ))} 
         </ul>
