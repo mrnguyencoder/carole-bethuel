@@ -62,7 +62,7 @@ function Home() {
             <ul className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
                 {photos.map((item) => (
                     <li key={item.img} className="p-8">
-                        <img src={item.img} alt="" className='rounded-2xl'/>
+                        <img src={item.img} alt="" className='rounded-2xl md:h-[32rem] w-full object-cover'/>
                     </li>
                 ))}
             </ul>
