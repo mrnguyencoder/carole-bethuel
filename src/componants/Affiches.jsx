@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import a1 from '../assets/a1.jpeg';
 import a2 from '../assets/a2.jpeg';
 import a3 from '../assets/a3.jpeg';
@@ -10,31 +10,33 @@ import a6 from '../assets/a6.jpeg';
 function Affiches() {
     const affiches = [
         {
-            name: `name-1`,
+            id: `name-1`,
             img: a1,
         },
         {
-            name: `name-2`,
+            id: `name-2`,
             img: a2,
         },
         {
-            name: `name-3`,
+            id: `name-3`,
             img: a3,
         },
         {
-            name: ``,
+            id: `name-4`,
             img: a4,
         },
         {
-            name: ``,
+            id: `name-5`,
             img: a5,
         },
         {
-            name: ``,
+            id: `name-6`,
             img: a6,
         },
 
     ]
+
+    const { id } = useParams()
   return (
     <section>
         <h2 className="text-3xl text-center py-10">Affiches</h2>
