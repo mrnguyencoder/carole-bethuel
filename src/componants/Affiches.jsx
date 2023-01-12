@@ -43,7 +43,7 @@ function Affiches() {
            {affiches.map((item) => (
             <li key={item.img} className="p-6 mx-auto">
                 <Link to="/affiches/:id">
-                    <img src={item.img} alt="" className='transition-all duration-300 rounded-lg h-auto max-w-sm filter grayscale hover:grayscale-0'/>
+                    <img src={item.img} alt="" className='transition-all duration-300 rounded-lg lg:h-auto lg:max-w-sm filter grayscale hover:grayscale-0'/>
                 </Link>
             </li>
            ))} 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import pic1 from '../assets/1.jpg';
 import pic2 from '../assets/2.jpg';
 import pic3 from '../assets/3.jpg';
@@ -59,6 +60,7 @@ function Home() {
                 {photos.map((item) => (
                     <li key={item.img} className="p-8">
                         <img src={item.img} alt="" className='rounded-2xl md:h-[32rem] w-full object-cover'/>
+                        <Link to="" className='text-center'>Regarder</Link>
                     </li>
                 ))}
             </ul>
