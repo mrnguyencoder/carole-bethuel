@@ -60,7 +60,7 @@ function Home() {
                 {photos.map((item) => (
                     <li key={item.img} className="p-8">
                         <img src={item.img} alt="" className='rounded-2xl md:h-[32rem] w-full object-cover'/>
-                        <Link to="" className='text-center'>Regarder</Link>
+                        <Link to="/" className='text-center'></Link>
                     </li>
                 ))}
             </ul>
