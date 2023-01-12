@@ -11,8 +11,8 @@ export default function Contact() {
             <p className='text-lg leading-6'>contactez-moi et je me ferai un plaisir de vous répondre.</p>
             <a href="tel:33782885224"
                 className="flex space-x-3 text-lg md:text-xl lg:text-2xl ">
-                <PhoneIcon className="animate-bounce h-8 flex-shrink-0 text-green-500" aria-hidden="true" />
-                <p className="animate-pulse">+33-142520624</p>
+                <PhoneIcon className="md: h-8 flex-shrink-0 text-green-500" aria-hidden="true" />
+                <p className="md:animate-pulse">+33-142520624</p>
             </a>
             <a href="mailto:carolebethuel@wanadoo.fr"
                 className="flex space-x-3 text-lg md:text-xl lg:text-2xl ">

@@ -13,14 +13,39 @@ function NavBar() {
             <img src={Logo} alt="" className='h-10 md:h-14 lg:h-20' />
         </Link>
         
-        <ul className="flex space-x-3 lg:pr-6 text-lg text-slate-900 hover:text-slate-700 md:text-2xl">
+        <ul className="hidden md:flex space-x-3 lg:pr-6 text-lg text-slate-900 hover:text-slate-700 md:text-2xl">
             <Link to="/affiches" className="border-2 px-4 py-2 rounded-3xl bg-gray-900 text-slate-50 hover:bg-gray-700 hover:text-white">affiches</Link>
             <Link to="/contact" className="border-2 px-4 py-2 rounded-3xl bg-gray-900 text-slate-50 hover:bg-gray-700 hover:text-white">contact</Link>
         </ul>
 
+        {/* Hamberger */}
         <div onClick={handleClick} className="md:hidden z-10">
-            {!nav ? <Bars3BottomRightIcon className='text-red-500 h-8' /> : <XMarkIcon/>}
+            {!nav ? <Bars3BottomRightIcon className='text-slate-800 h-10' /> 
+                  : <XMarkIcon className='text-slate-50 h-10'/>}
         </div>
+        {/* Menu Mobile */}
+        <ul className={
+            !nav 
+            ? 'hidden'
+            : "absolute top-0 left-0 w-full h-screen bg-slate-900 flex flex-col justify-center items-center text-slate-50 space-y-9 text-3xl"
+        }>
+            <li className="">
+                <Link to="/" onClick={handleClick} smooth={true} duration={500}>
+                    Accueil
+                </Link>
+            </li>
+            <li className="">
+                <Link to="/affiches" onClick={handleClick} smooth={true} duration={500}>
+                    Affiches
+                </Link>
+            </li>
+            <li className="">
+                <Link to="/contact" onClick={handleClick} smooth={true} duration={500}>
+                    Contact
+                </Link>
+            </li>
+            
+        </ul>
 
     </nav>
   )
