@@ -8,6 +8,7 @@ import Affiches from './componants/Affiches';
 import MentionsLegales from './componants/MentionsLegales';
 import Films from './componants/FilmDetails';
 import AfficheDetails from './componants/AfficheDetails';
+import NotFound from './componants/NotFound';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
           <Route path= "/affiches/:id" element={<AfficheDetails />} />
         <Route path= "/contact" element={<Contact />} />
         <Route path= "/mentionslegales" element={<MentionsLegales />} />
+        <Route path= "*" element={<NotFound />} />
+
       </Routes>
       <Footer />
     </div>

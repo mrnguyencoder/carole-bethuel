@@ -6,6 +6,8 @@ import ad3 from '../assets/ad3.jpeg';
 
 function AfficheDetails() {
 
+    const {id} = useParams()
+
 const affichedetails = [
     {
         id: `nameaffiche1`,
@@ -26,7 +28,7 @@ const affichedetails = [
         <ul className="">
            {affichedetails.map((item) => (
             <li key={item.id} className="">
-                <h3 className="">Affiche: {item.id}</h3>
+                <h3 className="">Affiche: {id}</h3>
                 <img src={item.imgaffiche} alt="" />
             </li> 
             
