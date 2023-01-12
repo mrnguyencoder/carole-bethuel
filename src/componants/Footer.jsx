@@ -6,7 +6,7 @@ function Footer() {
     <footer className='text-center md:flex justify-between p-4 bg-slate-900 text-slate-100 md:text-lg md:p-6 rounded-t-md'>
         <Link to="/mentionslegales" className=' hover:border-b-2'>Mentions Légales</Link>
         <p className="">
-            Copyright © {new Date().getFullYear()} carole bethuel. Tous droits réservés. 
+            © {new Date().getFullYear()} carole bethuel. Tous droits réservés. 
         </p> 
     </footer>
   )
