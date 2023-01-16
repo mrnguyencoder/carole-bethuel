@@ -8,14 +8,14 @@ function NavBar() {
   const handleClick = () => setNav(!nav);
 
     return (
-    <nav className='flex justify-between items-center p-4 bg-slate-100 rounded-b-md shadow-md'>
+    <nav className='flex justify-between items-center p-4 bg-slate-100 rounded-b-md'>
         <Link to="/" className="">
-            <img src={Logo} alt="" className='h-10 md:h-14 lg:h-20' />
+            <img src={Logo} alt="" className='h-10 md:h-14 lg:h-18' />
         </Link>
         
         <ul className="hidden md:flex space-x-3 lg:pr-6 text-lg text-slate-900 hover:text-slate-700 md:text-2xl">
-            <Link to="/affiches" className="border-2 px-4 py-2 rounded-3xl bg-gray-900 text-slate-50 hover:bg-gray-700 hover:text-white">affiches</Link>
-            <Link to="/contact" className="border-2 px-4 py-2 rounded-3xl bg-gray-900 text-slate-50 hover:bg-gray-700 hover:text-white">contact</Link>
+            <Link to="/affiches" className="px-4 py-2 rounded-3xl text-gray-900 hover:text-gray-700">affiches</Link>
+            <Link to="/contact" className="px-4 py-2 rounded-3xl text-gray-900 hover:text-gray-700">contact</Link>
         </ul>
 
         {/* Hamberger */}
