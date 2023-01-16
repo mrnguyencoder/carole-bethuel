@@ -7,7 +7,6 @@ import Footer from './componants/Footer';
 import Affiches from './componants/Affiches';
 import MentionsLegales from './componants/MentionsLegales';
 import Films from './componants/FilmDetails';
-import AfficheDetails from './componants/AfficheDetails';
 import NotFound from './componants/NotFound';
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
         <Route path= "/" element={<Home />} />
         <Route path= "/films" element={<Films />} />
         <Route path= "/affiches" element={<Affiches />} />
-          <Route path= "/affiches/:id" element={<AfficheDetails />} />
         <Route path= "/contact" element={<Contact />} />
         <Route path= "/mentionslegales" element={<MentionsLegales />} />
         <Route path= "*" element={<NotFound />} />
