@@ -8,6 +8,7 @@ import Affiches from './componants/Affiches';
 import MentionsLegales from './componants/MentionsLegales';
 import Films from './componants/FilmDetails';
 import NotFound from './componants/NotFound';
+import PhotoGallery from './componants/PhotoGallery';
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
         <Route path= "/contact" element={<Contact />} />
         <Route path= "/mentionslegales" element={<MentionsLegales />} />
         <Route path= "*" element={<NotFound />} />
+
+        <Route path= "/PhotoGallery" element={<PhotoGallery />} />
+
+
 
       </Routes>
       <Footer />
