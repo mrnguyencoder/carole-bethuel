@@ -42,7 +42,7 @@ function Affiches() {
         <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
            {affiches.map((item) => (
             <li key={item.img} className="p-6 mx-auto">
-                <Link to="/affiches/:id">
+                <Link to={`/affiches/${item.id}`}>
                     <img src={item.img} alt="" className='transition-all duration-300 rounded-lg lg:h-auto lg:max-w-sm filter md:grayscale hover:grayscale-0'/>
                 </Link>
             </li>
