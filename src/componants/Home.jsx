@@ -146,7 +146,7 @@ function Home() {
             <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {photos.map((item) => (
                     <li key={item.img} className="p-8">
-                        <img src={item.img} alt={item.name} className='rounded-2xl md:h-[32rem] lg:h-[42rem] w-full object-cover'/>
+                        <img src={item.img} alt={item.name} className='rounded-2xl md:h-[32rem] lg:h-[42rem] w-full object-cover shadow-md'/>
                         <Link to="" className='text-center'></Link>
                     </li>
                 ))}
