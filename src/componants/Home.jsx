@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import React, { useState, useEffect }from 'react';
+import { Link, useLocation, useParams } from 'react-router-dom';
+import { XMarkIcon } from '@heroicons/react/24/outline';
 
 import pic1 from '../assets/1.jpg';
 import pic2 from '../assets/2.jpg';
@@ -131,10 +132,22 @@ const films = [
     }
   ];
 
+  
 function Home() {
+    const location = useLocation();
     const { title } = useParams();
     const film = films.find(f => f.title === title);
+    const [selectedPhoto, setSelectedPhoto] = useState(null);
+    const [modalIsOpen, setModalIsOpen] = useState(false);
 
+    const handleOpenModal = (photo) => {
+        setSelectedPhoto(photo);
+        setModalIsOpen(true);
+    }
+
+    const handleCloseModal = () => {
+        setModalIsOpen(false);
+    }
 
   return (
     <section>
@@ -147,10 +160,24 @@ function Home() {
                     {film.photos.map((photo, index) => (
                         <div className="p-8">
                             <img key={index} src={photo} alt={`${film.title} - Photo ${index + 1}`} 
-                                className='rounded-2xl w-full object-cover shadow-md'/>
+                                onClick={() => handleOpenModal(photo)} 
+                                className='rounded-2xl w-full object-cover shadow-md cursor-pointer'/>
                         </div>
                     ))}
+
                 </div>
+                {modalIsOpen && (
+                        <div className="flex">
+                            <div className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75 flex items-center justify-center">
+                                <img src={selectedPhoto} alt={`${film.title}`}/>
+                                <button onClick={handleCloseModal}
+                                        className="absolute top-0 left-0 p-4 text-white bg-black bg-opacity-50 hover:bg-opacity-75"
+                                    >
+                                    <XMarkIcon  className='h-12'/>
+                                </button>
+                            </div>
+                        </div>
+                    )}
             </div>
             ) : (
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 p-8'>
@@ -177,20 +204,6 @@ function Home() {
             </div>
             )}
         </div>
-        
-        
-        
-        {/* <div className="">
-            <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-                {photos.map((item) => (
-                    <li key={item.film} className="p-8">
-                        <Link to={`/films/${item.film}`} className='text-center'>
-                            <img src={item.img} alt={item.name} className='rounded-2xl md:h-[32rem] lg:h-[42rem] w-full object-cover shadow-md'/>
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-        </div> */}
     </section>
   )
 }
