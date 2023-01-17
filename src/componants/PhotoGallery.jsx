@@ -9,12 +9,12 @@ import image6 from '../assets/6.jpg';
 
 const PhotoGallery = () => {
   const [images, setImages] = useState([
-    { id: 1, src: 'image1', group: 'group1' },
-    { id: 2, src: 'image2', group: 'group1' },
-    { id: 3, src: 'image3', group: 'group1' },
-    { id: 4, src: 'image4', group: 'group2' },
-    { id: 5, src: 'image5', group: 'group2' },
-    { id: 6, src: 'image6', group: 'group2' }
+    { id: 1, src: image1, group: 'group1' },
+    { id: 2, src: image2, group: 'group1' },
+    { id: 3, src: image3, group: 'group1' },
+    { id: 4, src: image4, group: 'group2' },
+    { id: 5, src: image5, group: 'group2' },
+    { id: 6, src: image6, group: 'group2' }
   ]);
 
   return (

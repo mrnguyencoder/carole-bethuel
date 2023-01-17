@@ -9,6 +9,7 @@ import MentionsLegales from './componants/MentionsLegales';
 import Films from './componants/FilmDetails';
 import NotFound from './componants/NotFound';
 import PhotoGallery from './componants/PhotoGallery';
+import ViewPhotos from './componants/ViewPhotos';
 
 function App() {
   return (
@@ -22,7 +23,11 @@ function App() {
         <Route path= "/mentionslegales" element={<MentionsLegales />} />
         <Route path= "*" element={<NotFound />} />
 
-        <Route path= "/PhotoGallery" element={<PhotoGallery />} />
+        
+      <Router>
+      <Route path="/" exact component={PhotoGallery} />
+      <Route path="/photos/:id" component={ViewPhotos} />
+      </Router>
 
 
 
