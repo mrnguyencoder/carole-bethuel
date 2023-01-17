@@ -14,13 +14,14 @@ function NavBar() {
         </Link>
         
         <ul className="hidden md:flex space-x-3 lg:pr-6 text-lg text-slate-900 hover:text-slate-700 md:text-2xl">
+            <Link to="/films" className="px-4 py-2 rounded-3xl text-gray-900 hover:text-gray-700">films</Link>
             <Link to="/affiches" className="px-4 py-2 rounded-3xl text-gray-900 hover:text-gray-700">affiches</Link>
             <Link to="/contact" className="px-4 py-2 rounded-3xl text-gray-900 hover:text-gray-700">contact</Link>
         </ul>
 
         {/* Hamberger */}
         <div onClick={handleClick} className="md:hidden z-10">
-            {!nav ? <Bars3BottomRightIcon className='text-slate-800 h-10' /> 
+            {!nav ? <Bars3BottomRightIcon className='text-gray-900 h-10' /> 
                   : <XMarkIcon className='text-slate-50 h-10'/>}
         </div>
         {/* Menu Mobile */}
@@ -32,6 +33,11 @@ function NavBar() {
             <li className="">
                 <Link to="/" onClick={handleClick} smooth={true} duration={500}>
                     Accueil
+                </Link>
+            </li>
+            <li className="">
+                <Link to="/films" onClick={handleClick} smooth={true} duration={500}>
+                    Films
                 </Link>
             </li>
             <li className="">
