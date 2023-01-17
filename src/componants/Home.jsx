@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import ReactModal from 'react-modal';
 
 import pic1 from '../assets/1.jpg';
 import pic2 from '../assets/2.jpg';
@@ -133,25 +132,9 @@ const films = [
   ];
 
 function Home() {
-    const location = useLocation();
     const { title } = useParams();
     const film = films.find(f => f.title === title);
-    const [modalIsOpen, setModalIsOpen] = useState(false);
-    const [selectedPhoto, setSelectedPhoto] = useState(null);
 
-    // check if the location's pathname is "/films/:title"
-    if (location.pathname !== `/films/${title}`) {
-    return null;
-    }
-
-    const handleOpenModal = (photo) => {
-        setSelectedPhoto(photo);
-        setModalIsOpen(true);
-    }
-
-    const handleCloseModal = () => {
-        setModalIsOpen(false);
-    }
 
   return (
     <section>
@@ -164,19 +147,9 @@ function Home() {
                     {film.photos.map((photo, index) => (
                         <div className="p-8">
                             <img key={index} src={photo} alt={`${film.title} - Photo ${index + 1}`} 
-                                className='rounded-2xl w-full object-cover shadow-md'
-                                onClick={() => handleOpenModal(photo)} />
+                                className='rounded-2xl w-full object-cover shadow-md'/>
                         </div>
                     ))}
-                    <ReactModal
-                        isOpen={modalIsOpen}
-                        onRequestClose={handleCloseModal}
-                        shouldCloseOnOverlayClick={true}
-                        ariaHideApp={false}
-                    >
-                        <img src={selectedPhoto} alt={`${film.title} - Full Size`} />
-                        <button onClick={handleCloseModal}>Close</button>
-                    </ReactModal>
                 </div>
             </div>
             ) : (
