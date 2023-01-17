@@ -13,7 +13,7 @@ export default function Contact() {
             <a href="tel:33782885224"
                 className="flex space-x-3 text-lg md:text-xl lg:text-2xl ">
                 <PhoneIcon className="md: h-8 flex-shrink-0 text-green-500" aria-hidden="true" />
-                <p className="md:animate-pulse">06 14 54 68 24</p>
+                <p className="">06 14 54 68 24</p>
             </a>
             <a href="mailto:carolebethuel@wanadoo.fr"
                 className="flex space-x-3 text-lg md:text-xl lg:text-2xl ">
@@ -23,7 +23,7 @@ export default function Contact() {
             <a href="https://www.imdb.com/name/nm1615304/"
                 target="_blank"
                 className="flex space-x-3 text-lg md:text-xl lg:text-2xl ">
-                <img src={imdb} alt="" className='h-8'/>
+                <img src={imdb} alt="" className='h-10 animate-pulse'/>
                 <p className="">CV</p>
             </a>
 
