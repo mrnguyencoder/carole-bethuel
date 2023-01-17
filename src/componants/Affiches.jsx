@@ -232,7 +232,7 @@ function Affiches() {
     ]
   return (
     <section>
-        <h2 className="text-3xl text-center py-10">Affiches</h2>
+        <h2 className="text-3xl text-center py-10 tracking-wider font-extrabold">Affiches</h2>
 
         <ul className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
            {affiches.map((item) => (
