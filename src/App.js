@@ -8,8 +8,7 @@ import Affiches from './componants/Affiches';
 import MentionsLegales from './componants/MentionsLegales';
 import Films from './componants/FilmDetails';
 import NotFound from './componants/NotFound';
-import PhotoGallery from './componants/PhotoGallery';
-import ViewPhotos from './componants/ViewPhotos';
+import FilmDetails from './componants/FilmDetails';
 
 function App() {
   return (
@@ -17,17 +16,11 @@ function App() {
       <NavBar />
       <Routes>
         <Route path= "/" element={<Home />} />
-        <Route path= "/films" element={<Films />} />
+        <Route path= "/films/" element={<FilmDetails />} />
         <Route path= "/affiches" element={<Affiches />} />
         <Route path= "/contact" element={<Contact />} />
         <Route path= "/mentionslegales" element={<MentionsLegales />} />
         <Route path= "*" element={<NotFound />} />
-
-        
-      <Router>
-      <Route path="/" exact component={PhotoGallery} />
-      <Route path="/photos/:id" component={ViewPhotos} />
-      </Router>
 
 
 

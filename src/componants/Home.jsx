@@ -31,111 +31,111 @@ import pic27 from '../assets/27.png';
 function Home() {
     const photos = [
         {
-            name: ``,
+            film: `peter-vonkant`,
             img: pic1,
         },
         {
-            name: ``,
+            film: `titane`,
             img: pic2,
         },
         {
-            name: ``,
+            film: `irmavep`,
             img: pic3,
         },
         {
-            name: ``,
+            film: ``,
             img: pic4,
         },
         {
-            name: ``,
+            film: ``,
             img: pic5,
         },
         {
-            name: ``,
+            film: ``,
             img: pic6,
         },
         {
-            name: ``,
+            film: ``,
             img: pic7,
         },
         {
-            name: ``,
+            film: ``,
             img: pic8,
         },
         {
-            name: ``,
+            film: ``,
             img: pic9,
         },
         {
-            name: ``,
+            film: ``,
             img: pic10,
         },
         {
-            name: ``,
+            film: ``,
             img: pic11,
         },
         {
-            name: ``,
+            film: ``,
             img: pic12,
         },
         {
-            name: ``,
+            film: ``,
             img: pic13,
         },
         {
-            name: ``,
+            film: ``,
             img: pic14,
         },
         {
-            name: ``,
+            film: ``,
             img: pic15,
         },
         {
-            name: ``,
+            film: ``,
             img: pic16,
         },
         {
-            name: ``,
+            film: ``,
             img: pic17,
         },
         {
-            name: ``,
+            film: ``,
             img: pic18,
         },
         {
-            name: ``,
+            film: ``,
             img: pic19,
         },
         {
-            name: ``,
+            film: ``,
             img: pic20,
         },
         {
-            name: ``,
+            film: ``,
             img: pic21,
         },
         {
-            name: ``,
+            film: ``,
             img: pic22,
         },
         {
-            name: ``,
+            film: ``,
             img: pic23,
         },
         {
-            name: ``,
+            film: ``,
             img: pic24,
         },
         {
-            name: ``,
+            film: ``,
             img: pic25,
         },
         {
-            name: ``,
+            film: ``,
             img: pic26,
         },
         {
-            name: ``,
+            film: ``,
             img: pic27,
         },
 
@@ -145,9 +145,10 @@ function Home() {
         <div className="">
             <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {photos.map((item) => (
-                    <li key={item.img} className="p-8">
-                        <img src={item.img} alt={item.name} className='rounded-2xl md:h-[32rem] lg:h-[42rem] w-full object-cover shadow-md'/>
-                        <Link to="" className='text-center'></Link>
+                    <li key={item.film} className="p-8">
+                        <Link to={`/films/${item.film}`} className='text-center'>
+                            <img src={item.img} alt={item.name} className='rounded-2xl md:h-[32rem] lg:h-[42rem] w-full object-cover shadow-md'/>
+                        </Link>
                     </li>
                 ))}
             </ul>

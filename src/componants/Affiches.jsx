@@ -237,7 +237,7 @@ function Affiches() {
         <ul className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
            {affiches.map((item) => (
             <li key={item.img} className="p-8">
-                <img src={item.img} alt="" className='rounded-2xl md:h-[32rem] lg:h-[42rem] w-full object-cover shadow-lg'/>
+                <img src={item.img} alt="" className='rounded-2xl md:h-[32rem] lg:h-[42rem] w-full object-cover shadow-lg hover:scale-105'/>
             </li>
            ))} 
         </ul>
