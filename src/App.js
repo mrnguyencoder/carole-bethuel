@@ -6,7 +6,6 @@ import Contact from './componants/Contact';
 import Footer from './componants/Footer';
 import Affiches from './componants/Affiches';
 import MentionsLegales from './componants/MentionsLegales';
-import Films from './componants/FilmDetails';
 import NotFound from './componants/NotFound';
 import FilmDetails from './componants/FilmDetails';
 
@@ -16,7 +15,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path= "/" element={<Home />} />
-        <Route path= "/films/" element={<FilmDetails />} />
+        <Route path= "/films/" exact element={<FilmDetails />} />
+        <Route path= "/films/:title" exact element={<FilmDetails />} />
         <Route path= "/affiches" element={<Affiches />} />
         <Route path= "/contact" element={<Contact />} />
         <Route path= "/mentionslegales" element={<MentionsLegales />} />
