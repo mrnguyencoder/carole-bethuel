@@ -139,12 +139,12 @@ const films = [
             emily16,
 
         ]
-    }
+    },
     {
         id: 9,
         title: 'hors-norms',
         name: `Hors Norms`,
-        poster: pic3,
+        poster: pic9,
         photos: [
             horsnorms1,
             horsnorms2,
@@ -179,14 +179,14 @@ function Home() {
         <div>
             {film ? (
             <div className=''>
-                <h2 className="text-3xl text-center">Films</h2>
-                <h3 className='text-3xl text-center'>{film.name}</h3>
+                {/* <h2 className="text-3xl text-center">Films</h2> */}
+                {/* <h3 className='text-3xl text-center'>{film.name}</h3> */}
                 <div className="grid md:grid-cols-2 gap-5">
                     {film.photos.map((photo, index) => (
                         <div className="p-8">
                             <img key={index} src={photo} alt={`${film.title} - Photo ${index + 1}`} 
                                 onClick={() => handleOpenModal(photo)} 
-                                className='rounded-2xl w-full object-cover shadow-md cursor-pointer'/>
+                                className='w-full object-cover shadow-md cursor-pointer h-[20rem] md:h-[30rem]'/>
                         </div>
                     ))}
 
@@ -224,6 +224,11 @@ function Home() {
                 <div className="p-8">
                     <Link to={`/films/${films[3].title}`}>
                         <img src={films[3].poster} alt={films[3].title} className='rounded-2xl md:h-[32rem] lg:h-[42rem] w-full object-cover shadow-md'/>
+                    </Link>
+                </div>
+                <div className="p-8">
+                    <Link to={`/films/${films[4].title}`}>
+                        <img src={films[4].poster} alt={films[4].title} className='rounded-2xl md:h-[32rem] lg:h-[42rem] w-full object-cover shadow-md'/>
                     </Link>
                 </div>
             </div>
