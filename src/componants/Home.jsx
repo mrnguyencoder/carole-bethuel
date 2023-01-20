@@ -10,7 +10,7 @@ import pic4 from '../assets/4.jpg';
 // import pic6 from '../assets/6.jpg';
 // import pic7 from '../assets/7.jpg';
 // import pic8 from '../assets/8.jpg';
-// import pic9 from '../assets/9.jpg';
+import pic9 from '../assets/9.jpg';
 // import pic10 from '../assets/10.jpg';
 // import pic11 from '../assets/11.png';
 // import pic12 from '../assets/12.jpg';
@@ -54,6 +54,16 @@ import titane5 from '../assets/titane/titane5.jpg';
 import titane6 from '../assets/titane/titane6.jpg';
 import titane7 from '../assets/titane/titane7.jpg';
 import titane8 from '../assets/titane/titane8.jpg';
+
+import horsnorms1 from '../assets/horsnorms/horsnorms1.jpg';
+import horsnorms2 from '../assets/horsnorms/horsnorms2.jpg';
+import horsnorms3 from '../assets/horsnorms/horsnorms3.jpg';
+import horsnorms4 from '../assets/horsnorms/horsnorms4.jpg';
+import horsnorms5 from '../assets/horsnorms/horsnorms5.jpg';
+import horsnorms6 from '../assets/horsnorms/horsnorms6.jpg';
+import horsnorms7 from '../assets/horsnorms/horsnorms7.jpg';
+
+
 
 
 const films = [
@@ -130,6 +140,21 @@ const films = [
 
         ]
     }
+    {
+        id: 9,
+        title: 'hors-norms',
+        name: `Hors Norms`,
+        poster: pic3,
+        photos: [
+            horsnorms1,
+            horsnorms2,
+            horsnorms3,
+            horsnorms4,
+            horsnorms5,
+            horsnorms6,
+            horsnorms7,
+        ]
+    },
   ];
 
   
