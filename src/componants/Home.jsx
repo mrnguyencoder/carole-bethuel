@@ -1,6 +1,6 @@
 import React, { useState }from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
-import { ChevronDoubleLeftIcon, ChevronDoubleRightIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { ArrowUpCircleIcon, ChevronDoubleLeftIcon, ChevronDoubleRightIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 import pic1 from '../assets/1.jpg';
 import pic2 from '../assets/2.jpg';
@@ -428,11 +428,11 @@ function Home() {
     const location = useLocation();
     const { title } = useParams();
     const film = films.find(f => f.title === title);
-    const [selectedPhoto, setSelectedPhoto] = useState(null);
+    // const [selectedPhoto, setSelectedPhoto] = useState(null);
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
     const handleOpenModal = (photo) => {
-        setSelectedPhoto(photo);
+        // setSelectedPhoto(photo);
         setModalIsOpen(true);
     }
 
@@ -450,6 +450,10 @@ function Home() {
     setCurrentIndex((currentIndex - 1 + film.photos.length) % film.photos.length);
     }
 
+    const handleGoToTop = () => {
+        window.scrollTo(0, 0);
+      }
+    
   return (
     <section>
         <div>
@@ -458,7 +462,7 @@ function Home() {
                 <div className="grid md:grid-cols-2 gap-5">
                     {film.photos.map((photo, index) => (
                         <div className="p-8">
-                            <img key={index} src={photo} alt={`${film.title} - Photo ${index + 1}`} 
+                            <img key={index} src={photo} alt={`${film.title} - ${index + 1}`} 
                                 onClick={() => handleOpenModal(photo)} 
                                 className='w-full object-cover shadow-md cursor-pointer h-[20rem] md:h-[30rem]'/>
                         </div>
@@ -482,7 +486,15 @@ function Home() {
             </div>
             ) : (
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 p-8'>
-                <div className="p-8">
+                {films.map((film, index) => (
+                    <div className="p-8">
+                        <Link to={`/films/${film.title}`}>
+                        <img src={film.poster} alt={film.title} className='rounded-2xl md:h-[32rem] lg:h-[42rem] w-full object-cover shadow-md hover:scale-105'/> 
+                        </Link>
+                    </div>
+                ))}
+                
+                {/* <div className="p-8">
                     <Link to={`/films/${films[0].title}`}>
                         <img src={films[0].poster} alt={films[0].title} className='rounded-2xl md:h-[32rem] lg:h-[42rem] w-full object-cover shadow-md hover:scale-105'/>
                     </Link>
@@ -616,11 +628,11 @@ function Home() {
                     <Link to={`/films/${films[26].title}`}>
                         <img src={films[26].poster} alt={films[26].title} className='rounded-2xl md:h-[32rem] lg:h-[42rem] w-full object-cover shadow-md hover:scale-105'/>
                     </Link>
-                </div>
+                </div> */}
             </div>
             )}
         </div>
-        <Link to='/' className=''> On top</Link>
+        <button onClick={handleGoToTop} className="fixed right-1 bottom-0 text-green-600"><ArrowUpCircleIcon className='h-10' /> </button>
     </section>
   )
 }
