@@ -21,7 +21,7 @@ export default function Contact() {
             <a href="https://www.imdb.com/name/nm1615304/"
                 target="_blank"
                 className="flex space-x-3 text-xl md:text-2xl lg:text-4xl">
-                <img src={imdb} alt="" className='h-10 animate-pulse'/>
+                <img src={imdb} alt="" className='h-10'/>
                 <p className="">CV</p>
             </a>
         </div>

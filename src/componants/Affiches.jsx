@@ -234,10 +234,10 @@ function Affiches() {
     <section>
         <h2 className="text-3xl text-center py-10 tracking-wider font-extrabold">Affiches</h2>
 
-        <ul className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
+        <ul className='grid md:grid-cols-2 lg:grid-cols-4 gap-5'>
            {affiches.map((item) => (
-            <li key={item.img} className="p-8">
-                <img src={item.img} alt="" className='rounded-2xl md:h-[32rem] lg:h-[42rem] w-full object-cover shadow-lg'/>
+            <li key={item.img} className="px-16 md:p-3">
+                <img src={item.img} alt="" className='rounded-2xl md:h-[32rem] w-full object-cover shadow-lg'/>
             </li>
            ))} 
         </ul>
