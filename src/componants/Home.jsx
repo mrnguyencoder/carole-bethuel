@@ -1,6 +1,6 @@
 import React, { useState }from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
-import { XMarkIcon } from '@heroicons/react/24/outline';
+import { ChevronDoubleLeftIcon, ChevronDoubleRightIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 import pic1 from '../assets/1.jpg';
 import pic2 from '../assets/2.jpg';
@@ -469,10 +469,10 @@ function Home() {
                         <div className="flex">
                             <div className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75 flex items-center justify-center">
                                 <img src={film.photos[currentIndex]} alt={`${film.title}`}/>
-                                <button onClick={handlePrev}>Previous</button>
-                                <button onClick={handleNext}>Next</button>
+                                <button onClick={handlePrev} className="absolute top-[50%] left-0"><ChevronDoubleLeftIcon className='h-16 text-white' /></button>
+                                <button onClick={handleNext} className="absolute top-[50%] right-0 text-xl text-slate-50"><ChevronDoubleRightIcon className='h-16 text-white'/></button>
                                 <button onClick={handleCloseModal}
-                                        className="absolute top-0 left-0 p-4 text-white bg-black bg-opacity-50 hover:bg-opacity-75"
+                                        className="absolute top-0 left-0 p-4 text-white rounded-full bg-black bg-opacity-50 hover:bg-opacity-75"
                                     >
                                     <XMarkIcon  className='h-12'/>
                                 </button>
