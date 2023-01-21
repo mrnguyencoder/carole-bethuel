@@ -439,14 +439,22 @@ function Home() {
     const handleCloseModal = () => {
         setModalIsOpen(false);
     }
+    // allow users to navigate between the full size images
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const handleNext = () => {
+    setCurrentIndex((currentIndex + 1) % film.photos.length);
+    }
+
+    const handlePrev = () => {
+    setCurrentIndex((currentIndex - 1 + film.photos.length) % film.photos.length);
+    }
 
   return (
     <section>
         <div>
             {film ? (
             <div className=''>
-                {/* <h2 className="text-3xl text-center">Films</h2> */}
-                {/* <h3 className='text-3xl text-center'>{film.name}</h3> */}
                 <div className="grid md:grid-cols-2 gap-5">
                     {film.photos.map((photo, index) => (
                         <div className="p-8">
@@ -460,7 +468,9 @@ function Home() {
                 {modalIsOpen && (
                         <div className="flex">
                             <div className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75 flex items-center justify-center">
-                                <img src={selectedPhoto} alt={`${film.title}`}/>
+                                <img src={film.photos[currentIndex]} alt={`${film.title}`}/>
+                                <button onClick={handlePrev}>Previous</button>
+                                <button onClick={handleNext}>Next</button>
                                 <button onClick={handleCloseModal}
                                         className="absolute top-0 left-0 p-4 text-white bg-black bg-opacity-50 hover:bg-opacity-75"
                                     >
