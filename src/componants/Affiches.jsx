@@ -57,20 +57,17 @@ function Affiches() {
             img: a2,
         },
         {
-            id: `name-3`,
-            img: a3,
+            id: `name-5`,
+            img: a5,
         },
         {
             id: `name-4`,
             img: a4,
         },
+
         {
-            id: `name-5`,
-            img: a5,
-        },
-        {
-            id: `name-6`,
-            img: a6,
+            id: `name-3`,
+            img: a3,
         },
         {
             id: `name-6`,
@@ -84,17 +81,14 @@ function Affiches() {
             id: `name-6`,
             img: a9,
         },
+
         {
             id: `name-6`,
-            img: a10,
+            img: a16,
         },
         {
-            id: `name-1`,
-            img: a11,
-        },
-        {
-            id: `name-2`,
-            img: a15,
+            id: `name-6`,
+            img: a17,
         },
         {
             id: `name-3`,
@@ -104,18 +98,50 @@ function Affiches() {
             id: `name-4`,
             img: a14,
         },
+
+        {
+            id: `name-6`,
+            img: a26,
+        },
+        {
+            id: `name-5`,
+            img: a27,
+        },
+        {
+            id: `name-6`,
+            img: a28,
+        },
+        {
+            id: `name-6`,
+            img: a29,
+        },
+
+
+        {
+            id: `name-6`,
+            img: a6,
+        },
+        {
+            id: `name-6`,
+            img: a10,
+        },
+        {
+            id: `name-1`,
+            img: a11,
+        },
+
+
+        {
+            id: `name-2`,
+            img: a15,
+        },
+
+
         {
             id: `name-5`,
             img: a12,
         },
-        {
-            id: `name-6`,
-            img: a16,
-        },
-        {
-            id: `name-6`,
-            img: a17,
-        },
+
         {
             id: `name-6`,
             img: a18,
@@ -144,34 +170,16 @@ function Affiches() {
             id: `name-4`,
             img: a24,
         },
-        {
-            id: `name-5`,
-            img: a27,
-        },
-        {
-            id: `name-6`,
-            img: a29,
-        },
-        {
-            id: `name-6`,
-            img: a28,
-        },
-        // {
-        //     id: `name-6`,
-        //     img: a25,
-        // },
-        {
-            id: `name-6`,
-            img: a26,
-        },
-        {
-            id: `name-6`,
-            img: a30,
-        },
-        {
+                {
             id: `name-1`,
             img: a37,
         },
+        {
+            id: `name-4`,
+            img: a31,
+        },
+
+
         {
             id: `name-2`,
             img: a32,
@@ -181,8 +189,8 @@ function Affiches() {
             img: a33,
         },
         {
-            id: `name-4`,
-            img: a31,
+            id: `name-6`,
+            img: a30,
         },
         {
             id: `name-5`,
