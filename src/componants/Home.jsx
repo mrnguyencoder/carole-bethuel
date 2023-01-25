@@ -1443,24 +1443,24 @@ function Home() {
                                     >
                                     <XMarkIcon  className='h-12'/>
                                 </button>
-                                <span className="absolute top-0 right-0 p-4 md:p-6 text-white text-2xl">{currentIndex + 1}/{film.photos.length}</span>
+                                <span className="absolute top-0 right-[50%] p-4 md:p-6 text-white text-2xl">{currentIndex + 1}/{film.photos.length}</span>
                             </div>
                         </div>
                     )}
             </div>
             ) : (
-            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 p-8'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 px-6'>
                 {films.map((film, index) => (
-                    <div className="p-6">
+                    <div className="p-4">
                         <Link to={`/films/${film.title}`}>
-                        <img src={film.poster} alt={film.title} className='rounded-2xl md:h-[30rem] lg:h-[40rem] w-full object-cover shadow-md hover:scale-105'/> 
+                        <img src={film.poster} alt={film.title} className='rounded-2xl md:h-[30rem] lg:h-[38rem] w-full object-cover shadow-md hover:scale-95'/> 
                         </Link>
                     </div>
                 ))}
             </div>
             )}
         </div>
-        <button onClick={handleGoToTop} className="fixed right-1 bottom-0 text-green-600"><ArrowUpCircleIcon className='h-10' /> </button>
+        <button onClick={handleGoToTop} className="fixed right-1 bottom-1 text-emerald-600"><ArrowUpCircleIcon className='h-10' /> </button>
     </section>
   )
 }
