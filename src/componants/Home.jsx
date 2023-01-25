@@ -1,6 +1,6 @@
 import React, { useState }from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
-import { ArrowUpCircleIcon, ChevronDoubleLeftIcon, ChevronDoubleRightIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { ArrowUpCircleIcon, ChevronLeftIcon, ChevronRightIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 import pic1 from '../assets/1.jpg';
 import pic2 from '../assets/2.jpg';
@@ -1084,6 +1084,7 @@ const films = [
 
   
 function Home() {
+    
     const location = useLocation();
     const { title } = useParams();
     const film = films.find(f => f.title === title);
@@ -1091,9 +1092,10 @@ function Home() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
     const handleOpenModal = (photo) => {
-        // setSelectedPhoto(photo);
+        const currentIndex = film.photos.indexOf(photo);
         setModalIsOpen(true);
-    }
+        setCurrentIndex(currentIndex);
+      }
 
     const handleCloseModal = () => {
         setModalIsOpen(false);
@@ -1131,14 +1133,15 @@ function Home() {
                 {modalIsOpen && (
                         <div className="flex">
                             <div className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75 flex items-center justify-center">
-                                <img src={film.photos[currentIndex]} alt={`${film.title}`}/>
-                                <button onClick={handlePrev} className="absolute top-[50%] left-0"><ChevronDoubleLeftIcon className='h-16 text-white' /></button>
-                                <button onClick={handleNext} className="absolute top-[50%] right-0 text-xl text-slate-50"><ChevronDoubleRightIcon className='h-16 text-white'/></button>
+                                <img src={film.photos[currentIndex]} alt={`${film.title}`} className="lg:h-[100%]"/>
+                                <button onClick={handlePrev} className="absolute top-[50%] left-0 hover:scale-110"><ChevronLeftIcon className='h-12 md:h-16 text-white' /></button>
+                                <button onClick={handleNext} className="absolute top-[50%] right-0 hover:scale-110"><ChevronRightIcon className='h-12 md:h-16 text-white'/></button>
                                 <button onClick={handleCloseModal}
-                                        className="absolute top-0 left-0 p-4 text-white rounded-full bg-black bg-opacity-50 hover:bg-opacity-75"
+                                        className="absolute top-0 left-0 p-1 md:p-3 text-white hover:scale-110"
                                     >
                                     <XMarkIcon  className='h-12'/>
                                 </button>
+                                <span className="absolute top-0 right-0 p-4 md:p-6 text-white text-2xl">{currentIndex + 1}/{film.photos.length}</span>
                             </div>
                         </div>
                     )}
