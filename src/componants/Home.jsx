@@ -109,6 +109,7 @@ import toutsest12 from '../assets/Tout sest bien passé/TSBP12.jpg';
 
 // 6
 
+
 // 7
 import ps1 from '../assets/Personal Shopper/personal-shopper002.jpg';
 import ps2 from '../assets/Personal Shopper/personal-shopper003.jpg';
@@ -401,18 +402,14 @@ import viefic20 from '../assets/Doubles Vies Non-Fiction/GALERIE-DOUBLES-VIES-02
 import viefic21 from '../assets/Doubles Vies Non-Fiction/GALERIE-DOUBLES-VIES-029_1.jpg';
 import viefic22 from '../assets/Doubles Vies Non-Fiction/GALERIE-DOUBLES-VIES-030_1.jpg';
 // 17
-import amjeu1 from '../assets/Un amour de jeunesse/3000Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
-import amjeu2 from '../assets/Un amour de jeunesse/3001Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
-import amjeu3 from '../assets/Un amour de jeunesse/3002Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
-import amjeu4 from '../assets/Un amour de jeunesse/3003Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
-import amjeu5 from '../assets/Un amour de jeunesse/3007Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
-import amjeu6 from '../assets/Un amour de jeunesse/3008Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
-import amjeu7 from '../assets/Un amour de jeunesse/3009Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
-import amjeu8 from '../assets/Un amour de jeunesse/3010Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
-import amjeu9 from '../assets/Un amour de jeunesse/3011Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
-import amjeu10 from '../assets/Un amour de jeunesse/3012Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
-import amjeu11 from '../assets/Un amour de jeunesse/3015Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
-import amjeu12 from '../assets/Un amour de jeunesse/3016Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
+import divantunis1 from '../assets/Un divan a Tunis/DT1.jpg';
+import divantunis2 from '../assets/Un divan a Tunis/DT2.jpg';
+import divantunis3 from '../assets/Un divan a Tunis/DT3.jpg';
+import divantunis4 from '../assets/Un divan a Tunis/DT4.jpg';
+import divantunis5 from '../assets/Un divan a Tunis/DT5.jpg';
+import divantunis6 from '../assets/Un divan a Tunis/DT6.jpg';
+import divantunis7 from '../assets/Un divan a Tunis/DT7.jpg';
+import divantunis8 from '../assets/Un divan a Tunis/DT8.jpg';
 
 // 18
 import lesadieux1 from '../assets/Les Adieux à la reine/LES_ADIEUX_A_LA_REINE_1.jpg';
@@ -444,14 +441,176 @@ import lesadieux28 from '../assets/Les Adieux à la reine/LES_ADIEUX_A_LA_REINE_
 import lesadieux29 from '../assets/Les Adieux à la reine/LES_ADIEUX_A_LA_REINE_41.jpg';
 import lesadieux30 from '../assets/Les Adieux à la reine/LES_ADIEUX_A_LA_REINE_42.jpg';
 // 19
+import secretnoir1 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire001.jpg';
+import secretnoir2 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire002.jpg';
+import secretnoir3 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire005.jpg';
+import secretnoir4 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire008.jpg';
+import secretnoir5 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire010-1.jpg';
+import secretnoir6 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire014-1.jpg';
+import secretnoir7 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire034.jpg';
+import secretnoir8 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire035.jpg';
+import secretnoir9 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire041.jpg';
+import secretnoir10 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire043.jpg';
+import secretnoir11 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire045.jpg';
+import secretnoir12 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire046.jpg';
+import secretnoir13 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire050.jpg';
+import secretnoir14 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire052.jpg';
+import secretnoir15 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire054.jpg';
+import secretnoir16 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire056.jpg';
+import secretnoir17 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire063_1.jpg';
+import secretnoir18 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire064_1.jpg';
+import secretnoir19 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire070_1.jpg';
+import secretnoir20 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire071_1.jpg';
+import secretnoir21 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire072_1.jpg';
+import secretnoir22 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire075_1.jpg';
+import secretnoir23 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire076_1.jpg';
+import secretnoir24 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire077_1.jpg';
+import secretnoir25 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire081_1.jpg';
+import secretnoir26 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire091_1.jpg';
+import secretnoir27 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire093_1.jpg';
+import secretnoir28 from '../assets/Le Secret de la chambre noire/le-secret-de-la-chambre-noire099_1.jpg';
 // 20
+import amjeu1 from '../assets/Un amour de jeunesse/3000Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
+import amjeu2 from '../assets/Un amour de jeunesse/3001Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
+import amjeu3 from '../assets/Un amour de jeunesse/3002Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
+import amjeu4 from '../assets/Un amour de jeunesse/3003Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
+import amjeu5 from '../assets/Un amour de jeunesse/3007Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
+import amjeu6 from '../assets/Un amour de jeunesse/3008Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
+import amjeu7 from '../assets/Un amour de jeunesse/3009Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
+import amjeu8 from '../assets/Un amour de jeunesse/3010Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
+import amjeu9 from '../assets/Un amour de jeunesse/3011Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
+import amjeu10 from '../assets/Un amour de jeunesse/3012Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
+import amjeu11 from '../assets/Un amour de jeunesse/3015Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
+import amjeu12 from '../assets/Un amour de jeunesse/3016Un-amour-de-jeunesse-de-Mia-Hansen-Love.jpg';
 // 21
+import notura1 from '../assets/Nocturama/nocturama002.jpg';
+import notura2 from '../assets/Nocturama/nocturama003.jpg';
+import notura3 from '../assets/Nocturama/nocturama004.jpg';
+import notura4 from '../assets/Nocturama/nocturama006.jpg';
+import notura5 from '../assets/Nocturama/nocturama012.jpg';
+import notura6 from '../assets/Nocturama/nocturama013.jpg';
+import notura7 from '../assets/Nocturama/nocturama018.jpg';
+import notura8 from '../assets/Nocturama/nocturama024.jpg';
+import notura9 from '../assets/Nocturama/nocturama025.jpg';
+import notura10 from '../assets/Nocturama/nocturama026.jpg';
+import notura11 from '../assets/Nocturama/nocturama033.jpg';
+import notura12 from '../assets/Nocturama/nocturama035.jpg';
+import notura13 from '../assets/Nocturama/nocturama036.jpg';
+import notura14 from '../assets/Nocturama/nocturama040.jpg';
+import notura15 from '../assets/Nocturama/nocturama042.jpg';
+import notura16 from '../assets/Nocturama/nocturama046.jpg';
+import notura17 from '../assets/Nocturama/nocturama055.jpg';
+import notura18 from '../assets/Nocturama/nocturama056.jpg';
+import notura19 from '../assets/Nocturama/nocturama057.jpg';
+import notura20 from '../assets/Nocturama/nocturama058.jpg';
+import notura21 from '../assets/Nocturama/nocturama059.jpg';
+import notura22 from '../assets/Nocturama/nocturama061.jpg';
+import notura23 from '../assets/Nocturama/nocturama062.jpg';
+import notura24 from '../assets/Nocturama/nocturama064.jpg';
+import notura25 from '../assets/Nocturama/nocturama065.jpg';
+import notura26 from '../assets/Nocturama/nocturama066.jpg';
 // 22
+import apolo1 from '../assets/Apollonide/APPO1.jpg';
+import apolo2 from '../assets/Apollonide/APPO2.jpg';
+import apolo3 from '../assets/Apollonide/APPO3.jpg';
+import apolo4 from '../assets/Apollonide/APPO4.jpg';
+import apolo5 from '../assets/Apollonide/APPO5.jpg';
+import apolo6 from '../assets/Apollonide/APPO6.jpg';
+import apolo7 from '../assets/Apollonide/APPO7.jpg';
+import apolo8 from '../assets/Apollonide/APPO8.jpg';
+import apolo9 from '../assets/Apollonide/APPO9.jpg';
+import apolo10 from '../assets/Apollonide/APPO10.jpg';
+import apolo11 from '../assets/Apollonide/APPO11.jpg';
+import apolo12 from '../assets/Apollonide/APPO12.jpg';
+import apolo13 from '../assets/Apollonide/APPO13.jpg';
+import apolo14 from '../assets/Apollonide/APPO14.jpg';
+import apolo15 from '../assets/Apollonide/APPO15.jpg';
+import apolo16 from '../assets/Apollonide/APPO16.jpg';
+import apolo17 from '../assets/Apollonide/APPO17.jpg';
+import apolo18 from '../assets/Apollonide/APPO18.jpg';
+import apolo19 from '../assets/Apollonide/APPO19.jpg';
+import apolo20 from '../assets/Apollonide/APPO20.jpg';
+import apolo21 from '../assets/Apollonide/APPO21.jpg';
+import apolo22 from '../assets/Apollonide/APPO23.jpg';
+import apolo23 from '../assets/Apollonide/APPO24.jpg';
+import apolo24 from '../assets/Apollonide/APPO25.jpg';
 // 23
+import viesau1 from '../assets/Vie sauvage/VIE_SAUVAGE_1.jpg'; 
+import viesau2 from '../assets/Vie sauvage/VIE_SAUVAGE_2.jpg'; 
+import viesau3 from '../assets/Vie sauvage/VIE_SAUVAGE_3.jpg'; 
+import viesau4 from '../assets/Vie sauvage/VIE_SAUVAGE_4.jpg'; 
+import viesau5 from '../assets/Vie sauvage/VIE_SAUVAGE_5.jpg'; 
+import viesau6 from '../assets/Vie sauvage/VIE_SAUVAGE_7.jpg'; 
+import viesau7 from '../assets/Vie sauvage/VIE_SAUVAGE_11.jpg'; 
+import viesau8 from '../assets/Vie sauvage/VIE_SAUVAGE_16.jpg'; 
+import viesau9 from '../assets/Vie sauvage/VIE_SAUVAGE_17.jpg'; 
+import viesau10 from '../assets/Vie sauvage/VIE_SAUVAGE_18.jpg'; 
+import viesau11 from '../assets/Vie sauvage/VIE_SAUVAGE_21.jpg'; 
+import viesau12 from '../assets/Vie sauvage/VIE_SAUVAGE_22.jpg'; 
+import viesau13 from '../assets/Vie sauvage/VIE_SAUVAGE_23.jpg'; 
+import viesau14 from '../assets/Vie sauvage/VIE_SAUVAGE_24.jpg'; 
+import viesau15 from '../assets/Vie sauvage/VIE_SAUVAGE_25.jpg'; 
+import viesau16 from '../assets/Vie sauvage/VIE_SAUVAGE_28.jpg'; 
+import viesau17 from '../assets/Vie sauvage/VIE_SAUVAGE_29.jpg'; 
+import viesau18 from '../assets/Vie sauvage/VIE_SAUVAGE_31.jpg'; 
+import viesau19 from '../assets/Vie sauvage/VIE_SAUVAGE_33.jpg'; 
+import viesau20 from '../assets/Vie sauvage/VIE_SAUVAGE_34.jpg'; 
 // 24
+import toutpar1 from '../assets/Tout est pardonné/5000Tout-est-pardonné-de-Mia-Hansen-Love.jpg';
+import toutpar2 from '../assets/Tout est pardonné/5001Tout-est-pardonné-de-Mia-Hansen-Love.jpg';
+import toutpar3 from '../assets/Tout est pardonné/5002Tout-est-pardonné-de-Mia-Hansen-Love.jpg';
+import toutpar4 from '../assets/Tout est pardonné/5003Tout-est-pardonné-de-Mia-Hansen-Love.jpg';
+import toutpar5 from '../assets/Tout est pardonné/5004Tout-est-pardonné-de-Mia-Hansen-Love.jpg';
+import toutpar6 from '../assets/Tout est pardonné/5005Tout-est-pardonné-de-Mia-Hansen-Love.jpg';
+import toutpar7 from '../assets/Tout est pardonné/5006Tout-est-pardonné-de-Mia-Hansen-Love.jpg';
+import toutpar8 from '../assets/Tout est pardonné/5007Tout-est-pardonné-de-Mia-Hansen-Love.jpg';
+import toutpar9 from '../assets/Tout est pardonné/5008Tout-est-pardonné-de-Mia-Hansen-Love.jpg';
+import toutpar10 from '../assets/Tout est pardonné/5009Tout-est-pardonné-de-Mia-Hansen-Love.jpg';
+import toutpar11 from '../assets/Tout est pardonné/5010Tout-est-pardonné-de-Mia-Hansen-Love.jpg';
+import toutpar12 from '../assets/Tout est pardonné/5011Tout-est-pardonné-de-Mia-Hansen-Love.jpg';
 // 25
+import eth1 from '../assets/En thérapie/ET1.jpg'; 
+import eth2 from '../assets/En thérapie/ET2.jpg'; 
+import eth3 from '../assets/En thérapie/ET3.jpg'; 
+import eth4 from '../assets/En thérapie/ET4.jpg'; 
+import eth5 from '../assets/En thérapie/ET5.jpg'; 
+import eth6 from '../assets/En thérapie/ET6.jpg'; 
+import eth7 from '../assets/En thérapie/ET7.jpg'; 
+import eth8 from '../assets/En thérapie/ET8.jpg'; 
+import eth9 from '../assets/En thérapie/ET9.jpg'; 
+import eth10 from '../assets/En thérapie/ET10.jpg'; 
+import eth11 from '../assets/En thérapie/ET11.jpg'; 
+import eth12 from '../assets/En thérapie/ET12.jpg'; 
+import eth13 from '../assets/En thérapie/ET13.jpg'; 
+import eth14 from '../assets/En thérapie/ET14.jpg'; 
+import eth15 from '../assets/En thérapie/ET15.jpg'; 
+import eth16 from '../assets/En thérapie/ET16.jpg'; 
+import eth17 from '../assets/En thérapie/ET17.jpg'; 
+import eth18 from '../assets/En thérapie/ET18.jpg'; 
+import eth19 from '../assets/En thérapie/ET19.jpg'; 
+import eth20 from '../assets/En thérapie/ET20.jpg';
 // 26
+import ppoli1 from '../assets/Paris Police/PP1.jpg';
+import ppoli2 from '../assets/Paris Police/PP2.jpg';
+import ppoli3 from '../assets/Paris Police/PP3.jpg';
+import ppoli4 from '../assets/Paris Police/PP4.jpg';
+import ppoli5 from '../assets/Paris Police/PP5.jpg';
+import ppoli6 from '../assets/Paris Police/PP6.jpg';
+import ppoli7 from '../assets/Paris Police/PP7.jpg';
+import ppoli8 from '../assets/Paris Police/PP8.jpg';
+import ppoli9 from '../assets/Paris Police/PP9.jpg';
+import ppoli10 from '../assets/Paris Police/PP10.jpg';
+import ppoli11 from '../assets/Paris Police/PP11.jpg';
+import ppoli12 from '../assets/Paris Police/PP13.jpg';
+import ppoli13 from '../assets/Paris Police/PP14.jpg';
+import ppoli14 from '../assets/Paris Police/PP15.jpg';
 // 27
+import dane1 from '../assets/Diane/DIANE1.jpg';
+import dane2 from '../assets/Diane/DIANE 2.jpg';
+import dane3 from '../assets/Diane/DIANE 3.jpg';
+import dane4 from '../assets/Diane/DIANE 4.jpg';
+import dane5 from '../assets/Diane/DIANE 5.jpg';
+import dane6 from '../assets/Diane/DIANE 6.jpg';
 
 
 const films = [
@@ -573,6 +732,7 @@ const films = [
         name: `Un beau matin`,
         poster: pic6,
         photos: [
+            pic6,
         ]
     },
     {
@@ -937,22 +1097,18 @@ const films = [
     },
     {
         id: 17,
-        title: `Un-amour-de-jeunesse`,
-        name: `Un amour de jeunesse`,
+        title: `Un-divan-à-Tunis`,
+        name: `Un divan à Tunis`,
         poster: pic17,
         photos: [
-            amjeu1,
-            amjeu2,
-            amjeu3,
-            amjeu4,
-            amjeu5,
-            amjeu6,
-            amjeu7,
-            amjeu8,
-            amjeu9,
-            amjeu10,
-            amjeu11,
-            amjeu12,
+            divantunis1,
+            divantunis2,
+            divantunis3,
+            divantunis4,
+            divantunis5,
+            divantunis6,
+            divantunis7,
+            divantunis8,
         ]
     },
     {
@@ -994,90 +1150,236 @@ const films = [
     },
     {
         id: 19,
-        title: '',
-        name: ``,
+        title: `Le-Secret-de-la-chambre-noire`,
+        name: `Le Secret de la chambre noire`,
         poster: pic19,
         photos: [
-            titane1,
-            titane2,
-            titane3,
-            titane4,
-            titane5,
-            titane6,
-            titane7,
-            titane8,
+            secretnoir1,
+            secretnoir2,
+            secretnoir3,
+            secretnoir4,
+            secretnoir5,
+            secretnoir6,
+            secretnoir7,
+            secretnoir8,
+            secretnoir9,
+            secretnoir10,
+            secretnoir11,
+            secretnoir12,
+            secretnoir13,
+            secretnoir14,
+            secretnoir15,
+            secretnoir16,
+            secretnoir17,
+            secretnoir18,
+            secretnoir19,
+            secretnoir20,
+            secretnoir21,
+            secretnoir22,
+            secretnoir23,
+            secretnoir24,
+            secretnoir25,
+            secretnoir26,
+            secretnoir27,
+            secretnoir28,
         ]
     },
     {
         id: 20,
-        title: '',
-        name: ``,
+        title: `Un-amour-de-jeunesse`,
+        name: `Un amour de jeunesse`,
         poster: pic20,
         photos: [
-              titane1,
+            amjeu1,
+            amjeu2,
+            amjeu3,
+            amjeu4,
+            amjeu5,
+            amjeu6,
+            amjeu7,
+            amjeu8,
+            amjeu9,
+            amjeu10,
+            amjeu11,
+            amjeu12,
         ]
     },
     {
         id: 21,
-        title: '',
-        name: ``,
+        title: `Nocturama`,
+        name: `Nocturama`,
         poster: pic21,
         photos: [
-              titane2,
+            notura1,
+            notura2,
+            notura3,
+            notura4,
+            notura5,
+            notura6,
+            notura7,
+            notura8,
+            notura9,
+            notura10,
+            notura11,
+            notura12,
+            notura13,
+            notura14,
+            notura15,
+            notura16,
+            notura17,
+            notura18,
+            notura19,
+            notura20,
+            notura21,
+            notura22,
+            notura23,
+            notura24,
+            notura25,
+            notura26,
         ]
     },
     {
         id: 22,
-        title: '',
-        name: ``,
+        title: `L'Apollonide:Souvenirs-de-la-maison-close`,
+        name: `L'Apollonide : Souvenirs de la maison close`,
         poster: pic22,
         photos: [
-              titane3,
+            apolo1,
+            apolo2,
+            apolo3,
+            apolo4,
+            apolo5,
+            apolo6,
+            apolo7,
+            apolo8,
+            apolo9,
+            apolo10,
+            apolo11,
+            apolo12,
+            apolo13,
+            apolo14,
+            apolo15,
+            apolo16,
+            apolo17,
+            apolo18,
+            apolo19,
+            apolo20,
+            apolo21,
+            apolo22,
+            apolo23,
+            apolo24,
         ]
     },
     {
         id: 23,
-        title: '',
-        name: ``,
+        title: `Vie-sauvage`,
+        name: `Vie sauvage`,
         poster: pic23,
         photos: [
-              titane4,
+            viesau1,
+            viesau2,
+            viesau3,
+            viesau4,
+            viesau5,
+            viesau6,
+            viesau7,
+            viesau8,
+            viesau9,
+            viesau10,
+            viesau11,
+            viesau12,
+            viesau13,
+            viesau14,
+            viesau15,
+            viesau16,
+            viesau17,
+            viesau18,
+            viesau19,
+            viesau20,
         ]
     },
     {
         id: 24,
-        title: '',
-        name: ``,
+        title: `Tout-est-pardonné`,
+        name: `Tout est pardonné`,
         poster: pic24,
         photos: [
-              titane5,
+            toutpar1,
+            toutpar2,
+            toutpar3,
+            toutpar4,
+            toutpar5,
+            toutpar6,
+            toutpar7,
+            toutpar8,
+            toutpar9,
+            toutpar10,
+            toutpar11,
+            toutpar12,
         ]
     },
     {
         id: 25,
-        title: '',
-        name: ``,
+        title: `En-thérapie`,
+        name: `En thérapie`,
         poster: pic25,
         photos: [
-              titane6,
+            eth1,
+            eth2,
+            eth3,
+            eth4,
+            eth5,
+            eth6,
+            eth7,
+            eth8,
+            eth9,
+            eth10,
+            eth11,
+            eth12,
+            eth13,
+            eth14,
+            eth15,
+            eth16,
+            eth17,
+            eth18,
+            eth19,
+            eth20,
         ]
     },
     {
         id: 26,
-        title: '',
-        name: ``,
+        title: `Paris Police`,
+        name: `Paris Police`,
         poster: pic26,
         photos: [
-              titane7,
+            ppoli1,
+            ppoli2,
+            ppoli3,
+            ppoli4,
+            ppoli5,
+            ppoli6,
+            ppoli7,
+            ppoli8,
+            ppoli9,
+            ppoli10,
+            ppoli11,
+            ppoli12,
+            ppoli13,
+            ppoli14,
         ]
     },
     {
         id: 27,
-        title: '',
-        name: ``,
+        title: `Diane`,
+        name: `Diane`,
         poster: pic27,
         photos: [
-              titane8,
+            dane1,
+            dane2,
+            dane3,
+            dane4,
+            dane5,
+            dane6,
         ]
     },
   ];
@@ -1119,7 +1421,7 @@ function Home() {
     <section>
         <div>
             {film ? (
-            <div className=''>
+            <div className='min-h-screen'>
                 <div className="grid md:grid-cols-2 gap-5">
                     {film.photos.map((photo, index) => (
                         <div className="p-4">
