@@ -1,6 +1,6 @@
-import React, { useState }from 'react';
-import { Link, useLocation, useParams } from 'react-router-dom';
-import { ArrowUpCircleIcon, ChevronLeftIcon, ChevronRightIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import React, { useEffect, useState }from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { ArrowDownCircleIcon, ArrowUpCircleIcon, ChevronLeftIcon, ChevronRightIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 import pic1 from '../assets/1.jpg';
 import pic2 from '../assets/2.jpg';
@@ -45,6 +45,7 @@ import pvk11 from '../assets/peter von kant/PVK11.jpg';
 import pvk12 from '../assets/peter von kant/PVK13.jpg';
 import pvk13 from '../assets/peter von kant/PVK15.jpg';
 import pvk14 from '../assets/peter von kant/PVK16.jpg';
+import pvk15 from '../assets/peter von kant/PVK 13 BIS.jpg';
 // 2
 import titane1 from '../assets/titane/TIT1.jpg';
 import titane2 from '../assets/titane/TIT2.jpg';
@@ -138,6 +139,7 @@ import ps25 from '../assets/Personal Shopper/personal-shopper049_1.jpg';
 import ps26 from '../assets/Personal Shopper/personal-shopper051_1.jpg';
 import ps28 from '../assets/Personal Shopper/personal-shopper057_1.jpg';
 import ps29 from '../assets/Personal Shopper/personal-shopper058_1.jpg';
+import ps30 from '../assets/Personal Shopper/personal-shopper055_1.jpg';
 // 8
 import sm1 from '../assets/Sils-Maria/rz100Sils-Maria-Olivier-Assayas.jpg';
 import sm2 from '../assets/Sils-Maria/rz101Sils-Maria-Olivier-Assayas.jpg';
@@ -616,7 +618,7 @@ import dane6 from '../assets/Diane/DIANE 6.jpg';
 const films = [
     {
       id: 1,
-      title: 'peter-von-kant',
+      title: 'Peter-von-Kant',
       name: `Peter von Kant`,
       poster: pic1,
       photos: [
@@ -630,15 +632,16 @@ const films = [
         pvk8,
         pvk9,
         pvk10,
-        pvk11,
         pvk12,
+        pvk15,
         pvk13,
         pvk14,
+        pvk11,
         ]
     },
     {
       id: 2,
-      title: 'titane',
+      title: 'Titane',
       name: `Titane`,
       poster: pic2,
       photos: [
@@ -654,16 +657,16 @@ const films = [
     },
     {
         id: 3,
-        title: 'irma-vep',
+        title: 'Irma-vep',
         name: `Irma Vep`,
         poster: pic3,
         photos: [
+           iv3,
            iv1,
            iv2,
-           iv3,
-           iv4,
-           iv5,
            iv6,
+           iv5,
+           iv4,
            iv7,
            iv8,
            iv9,
@@ -683,7 +686,7 @@ const films = [
     },
     {
         id: 4,
-        title: `emily-in-Paris`,
+        title: `Emily-in-Paris`,
         name: `Emily in Paris`,
         poster: pic4,
         photos: [
@@ -761,13 +764,14 @@ const films = [
             ps19,
             ps20,
             ps21,
-            ps22,
             ps23,
             ps24,
             ps25,
             ps26,
             ps28,
             ps29,
+            ps22,
+            ps30,
     
         ]
     },
@@ -892,21 +896,22 @@ const films = [
             unefemme7,
             unefemme8,
             unefemme9,
+            unefemme12,
             unefemme10,
             unefemme11,
-            unefemme12,
+            
             unefemme13,
             unefemme14,
             unefemme15,
             unefemme16,
-            unefemme17,
-            unefemme18,
+            unefemme17,    
             unefemme19,
             unefemme20,
-            unefemme21,
             unefemme22,
             unefemme23,
             unefemme24,
+            unefemme18,
+            unefemme21,
         ]
     },
     {
@@ -1348,7 +1353,7 @@ const films = [
     },
     {
         id: 26,
-        title: `Paris Police`,
+        title: `Paris-Police`,
         name: `Paris Police`,
         poster: pic26,
         photos: [
@@ -1357,9 +1362,10 @@ const films = [
             ppoli3,
             ppoli4,
             ppoli5,
+            ppoli8,
             ppoli6,
             ppoli7,
-            ppoli8,
+            
             ppoli9,
             ppoli10,
             ppoli11,
@@ -1376,8 +1382,8 @@ const films = [
         photos: [
             dane1,
             dane2,
-            dane3,
             dane4,
+            dane3,
             dane5,
             dane6,
         ]
@@ -1387,13 +1393,20 @@ const films = [
   
 function Home() {
     
-    const location = useLocation();
     const { title } = useParams();
     const film = films.find(f => f.title === title);
     // const [selectedPhoto, setSelectedPhoto] = useState(null);
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    // click on top
+    const handleGoToTop = () => {
+        window.scrollTo(0, 0);
+      }
+    const handleGoToBottom = () => {
+        window.scrollTo(0, document.body.scrollHeight);
+    }  
 
     const handleOpenModal = (photo) => {
+        window.scrollTo(0, 0);
         const currentIndex = film.photos.indexOf(photo);
         setModalIsOpen(true);
         setCurrentIndex(currentIndex);
@@ -1401,6 +1414,7 @@ function Home() {
 
     const handleCloseModal = () => {
         setModalIsOpen(false);
+        handleGoToTop();
     }
     // allow users to navigate between the full size images
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -1412,10 +1426,23 @@ function Home() {
     const handlePrev = () => {
     setCurrentIndex((currentIndex - 1 + film.photos.length) % film.photos.length);
     }
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            if (event.key === 'ArrowLeft') {
+                handlePrev();
+            } else if (event.key === 'ArrowRight') {
+                handleNext();
+            }
+        }
+    
+        window.addEventListener('keydown', handleKeyDown);
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [handlePrev, handleNext]);
+    
 
-    const handleGoToTop = () => {
-        window.scrollTo(0, 0);
-      }
+  
     
   return (
     <section>
@@ -1435,7 +1462,7 @@ function Home() {
                 {modalIsOpen && (
                         <div className="flex">
                             <div className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75 flex items-center justify-center ">
-                                <img src={film.photos[currentIndex]} alt={`${film.title}`} className=""/>
+                                <img src={film.photos[currentIndex]} alt={`${film.title}`} className="max-w-full max-h-full"/>
                                 <button onClick={handlePrev} className="absolute top-[50%] left-0 hover:scale-110"><ChevronLeftIcon className='h-6 md:h-8 text-white' /></button>
                                 <button onClick={handleNext} className="absolute top-[50%] right-0 hover:scale-110"><ChevronRightIcon className='h-6 md:h-8 text-white'/></button>
                                 <button onClick={handleCloseModal}
@@ -1452,15 +1479,16 @@ function Home() {
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 px-6 lg:px-28'>
                 {films.map((film, index) => (
                     <div className="p-4">
-                        <Link to={`/films/${film.title}`}>
-                        <img src={film.poster} alt={film.title} className='rounded-2xl md:h-[28rem] object-cover shadow-md hover:scale-95 hover:opacity-90'/> 
+                        <Link to={`/films/${film.title}`} onClick={() => handleOpenModal(film.photos[0])}>
+                        <img src={film.poster} alt={film.title} className='rounded-xl md:h-[28rem] object-cover shadow-md hover:scale-95 hover:opacity-90 transition duration-500'/> 
                         </Link>
                     </div>
                 ))}
             </div>
             )}
         </div>
-        <button onClick={handleGoToTop} className="fixed right-1 bottom-1 text-slate-400"><ArrowUpCircleIcon className='h-10' /> </button>
+        <button onClick={handleGoToTop} className="fixed right-1 bottom-10 text-slate-400 hover:scale-105"><ArrowUpCircleIcon className='h-8' /> </button>
+        <button onClick={handleGoToBottom} className="fixed right-1 bottom-2 text-slate-400 hover:scale-105"><ArrowDownCircleIcon className='h-8' /> </button>  
     </section>
   )
 }

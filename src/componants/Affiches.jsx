@@ -1,4 +1,5 @@
 import React from 'react';
+import { ArrowDownCircleIcon, ArrowUpCircleIcon } from '@heroicons/react/24/outline';
 import a1 from '../assets/A1.jpg';
 import a2 from '../assets/A2.jpg';
 import a3 from '../assets/A3.png';
@@ -23,7 +24,7 @@ import a21 from '../assets/A21.jpg';
 import a22 from '../assets/A22.jpg';
 import a23 from '../assets/A23.jpg';
 import a24 from '../assets/A24.jpg';
-import a25 from '../assets/A25.jpg';
+// import a25 from '../assets/A25.jpg';
 import a26 from '../assets/A26.jpg';
 import a27 from '../assets/A27.jpg';
 import a28 from '../assets/A28.jpg';
@@ -64,15 +65,15 @@ function Affiches() {
             id: `name-4`,
             img: a4,
         },
-
-        {
-            id: `name-3`,
-            img: a3,
-        },
         {
             id: `name-6`,
             img: a7,
         },
+        {
+            id: `name-3`,
+            img: a3,
+        },
+
         {
             id: `name-6`,
             img: a8,
@@ -235,20 +236,29 @@ function Affiches() {
         {
             id: `name-5`,
             img: a45,
-        },
+        },    
 
     ]
+    const handleGoToTop = () => {
+        window.scrollTo(0, 0);
+      }
+    
+    const handleGoToBottom = () => {
+        window.scrollTo(0, document.body.scrollHeight);
+    }   
   return (
     <section>
-        <h2 className="text-3xl text-center py-10 tracking-wider font-extrabold">Affiches</h2>
+        <h2 className="text-2xl text-center py-10 tracking-wider font-extrabold">affiches</h2>
 
-        <ul className='grid md:grid-cols-2 lg:grid-cols-4 gap-5'>
+        <ul className='grid md:grid-cols-2 lg:grid-cols-4 gap-6 px-11 md:px-16 pb-6'>
            {affiches.map((item) => (
-            <li key={item.img} className="px-16 md:p-3">
-                <img src={item.img} alt="" className='rounded-2xl md:h-[32rem] w-full object-cover shadow-lg'/>
+            <li key={item.img} className="">
+                <img src={item.img} alt="" className='rounded-xl w-full object-cover shadow-lg'/>
             </li>
            ))} 
         </ul>
+        <button onClick={handleGoToTop} className="fixed right-1 bottom-10 text-slate-400 hover:scale-105"><ArrowUpCircleIcon className='h-10' /> </button>
+        <button onClick={handleGoToBottom} className="fixed right-1 bottom-1 text-slate-400 hover:scale-105"><ArrowDownCircleIcon className='h-10' /> </button>
     </section>
   )
 }

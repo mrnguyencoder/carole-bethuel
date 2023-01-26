@@ -21,20 +21,15 @@ function NavBar() {
 
         {/* Hamberger */}
         <div onClick={handleClick} className="md:hidden z-10">
-            {!nav ? <Bars3BottomRightIcon className='text-gray-900 h-10' /> 
-                  : <XMarkIcon className='text-slate-50 h-10'/>}
+            {!nav ? <Bars3BottomRightIcon className='text-gray-900 h-8' /> 
+                  : <XMarkIcon className='text-slate-50 h-8'/>}
         </div>
         {/* Menu Mobile */}
         <ul className={
             !nav 
             ? 'hidden'
-            : "absolute top-0 left-0 w-full h-screen bg-slate-900 flex flex-col justify-center items-center text-slate-50 space-y-9 text-3xl"
+            : "absolute top-0 left-0 w-full h-screen bg-slate-900 flex flex-col justify-center items-center text-slate-50 space-y-9 text-2xl"
         }>
-            <li className="">
-                <Link to="/" onClick={handleClick} smooth={true} duration={500}>
-                    Accueil
-                </Link>
-            </li>
             <li className="">
                 <Link to="/films" onClick={handleClick} smooth={true} duration={500}>
                     Films
