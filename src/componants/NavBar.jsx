@@ -10,7 +10,7 @@ function NavBar() {
     return (
     <nav className='flex justify-between items-center px-4 pt-5 rounded-b-md'>
         <Link to="/" className="hover:animate-pulse">
-            <img src={Logo} alt="" className='h-10 md:h-14 lg:h-16' />
+            <img src={Logo} alt="" className='h-10 md:h-14' />
         </Link>
         
         <ul className="hidden md:flex space-x-3 lg:pr-6 text-lg lg:text-xl text-slate-900 hover:text-slate-700">

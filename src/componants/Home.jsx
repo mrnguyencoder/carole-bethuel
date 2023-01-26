@@ -1427,40 +1427,40 @@ function Home() {
                         <div className="p-4">
                             <img key={index} src={photo} alt={`${film.title} - ${index + 1}`} 
                                 onClick={() => handleOpenModal(photo)} 
-                                className='w-full object-cover shadow-md cursor-pointer md:h-[23rem] lg:h-[34rem]'/>
+                                className='shadow-md cursor-pointer'/>
                         </div>
                     ))}
 
                 </div>
                 {modalIsOpen && (
                         <div className="flex">
-                            <div className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75 flex items-center justify-center">
-                                <img src={film.photos[currentIndex]} alt={`${film.title}`} className="lg:h-[100%]"/>
-                                <button onClick={handlePrev} className="absolute top-[50%] left-0 hover:scale-110"><ChevronLeftIcon className='h-12 md:h-16 text-white' /></button>
-                                <button onClick={handleNext} className="absolute top-[50%] right-0 hover:scale-110"><ChevronRightIcon className='h-12 md:h-16 text-white'/></button>
+                            <div className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75 flex items-center justify-center ">
+                                <img src={film.photos[currentIndex]} alt={`${film.title}`} className=""/>
+                                <button onClick={handlePrev} className="absolute top-[50%] left-0 hover:scale-110"><ChevronLeftIcon className='h-6 md:h-8 text-white' /></button>
+                                <button onClick={handleNext} className="absolute top-[50%] right-0 hover:scale-110"><ChevronRightIcon className='h-6 md:h-8 text-white'/></button>
                                 <button onClick={handleCloseModal}
                                         className="absolute top-0 left-0 p-1 md:p-3 text-white hover:scale-110"
                                     >
-                                    <XMarkIcon  className='h-12'/>
+                                    <XMarkIcon  className='h-6'/>
                                 </button>
-                                <span className="absolute top-0 right-[50%] p-4 md:p-6 text-white text-2xl">{currentIndex + 1}/{film.photos.length}</span>
+                                <span className="absolute top-0 right-[50%] p-4 md:p-6 text-white text-lg">{currentIndex + 1}/{film.photos.length}</span>
                             </div>
                         </div>
                     )}
             </div>
             ) : (
-            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 px-6'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 px-6 lg:px-28'>
                 {films.map((film, index) => (
                     <div className="p-4">
                         <Link to={`/films/${film.title}`}>
-                        <img src={film.poster} alt={film.title} className='rounded-2xl md:h-[30rem] lg:h-[38rem] w-full object-cover shadow-md hover:scale-95'/> 
+                        <img src={film.poster} alt={film.title} className='rounded-2xl md:h-[28rem] object-cover shadow-md hover:scale-95 hover:opacity-90'/> 
                         </Link>
                     </div>
                 ))}
             </div>
             )}
         </div>
-        <button onClick={handleGoToTop} className="fixed right-1 bottom-1 text-emerald-600"><ArrowUpCircleIcon className='h-10' /> </button>
+        <button onClick={handleGoToTop} className="fixed right-1 bottom-1 text-slate-400"><ArrowUpCircleIcon className='h-10' /> </button>
     </section>
   )
 }
