@@ -6,7 +6,6 @@ import Contact from './componants/Contact';
 import Footer from './componants/Footer';
 import Affiches from './componants/Affiches';
 import MentionsLegales from './componants/MentionsLegales';
-import NotFound from './componants/NotFound';
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
         <Route path= "/affiches" element={<Affiches />} />
         <Route path= "/contact" element={<Contact />} />
         <Route path= "/mentionslegales" element={<MentionsLegales />} />
-        <Route path= "*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
