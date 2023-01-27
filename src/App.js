@@ -15,6 +15,7 @@ function App() {
         <Route path= "/" element={<Home />} />
         <Route path= "/films" element={<Home />} />
         <Route path= "/films/:title" element={<Home />} />
+        <Route path='*' element={<Home />} />
         <Route path= "/affiches" element={<Affiches />} />
         <Route path= "/contact" element={<Contact />} />
         <Route path= "/mentionslegales" element={<MentionsLegales />} />
