@@ -1479,7 +1479,7 @@ function Home() {
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 px-6 lg:px-28'>
                 {films.map((film, index) => (
                     <div className="p-4">
-                        <Link to={`/films/${film.title}`} onClick={() => handleOpenModal(film.photos[0])}>
+                        <Link to={`https://carolebethuel.fr/films/${film.title}`} onClick={() => handleOpenModal(film.photos[0])}>
                         <img src={film.poster} alt={film.title} className='rounded-xl md:h-[28rem] object-cover shadow-md hover:scale-95 hover:opacity-90 transition duration-500'/> 
                         </Link>
                     </div>
