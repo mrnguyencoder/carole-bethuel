@@ -6,23 +6,8 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Affiches from './components/Affiches';
 import MentionsLegales from './components/MentionsLegales';
-import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 function App() {
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const handleRefresh = () => {
-      navigate(window.location.pathname);
-    };
-
-    window.addEventListener('beforeunload', handleRefresh);
-    return () => {
-      window.removeEventListener('beforeunload', handleRefresh);
-    };
-  }, [navigate]);
-
   return (
     <div className="bg-slate-50">
       <NavBar />
