@@ -1,13 +1,28 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import NavBar from './componants/NavBar';
-import Home from './componants/Home';
-import Contact from './componants/Contact';
-import Footer from './componants/Footer';
-import Affiches from './componants/Affiches';
-import MentionsLegales from './componants/MentionsLegales';
+import NavBar from './components/NavBar';
+import Home from './components/Home';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Affiches from './components/Affiches';
+import MentionsLegales from './components/MentionsLegales';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function App() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleRefresh = () => {
+      navigate(window.location.pathname);
+    };
+
+    window.addEventListener('beforeunload', handleRefresh);
+    return () => {
+      window.removeEventListener('beforeunload', handleRefresh);
+    };
+  }, [navigate]);
+
   return (
     <div className="bg-slate-50">
       <NavBar />
@@ -22,7 +37,9 @@ function App() {
       </Routes>
       <Footer />
     </div>
-  );
+  )
 }
+
+  
 
 export default App;
