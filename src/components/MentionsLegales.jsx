@@ -19,7 +19,7 @@ function MentionsLegales() {
         <h3 className="py-5 text-lg text-center font-bold tracking-wide md:text-xl lg:text-2xl">ARTICLE 1 - L'EDITEUR </h3>
         <div className="space-y-4 md:text-lg lg:text-xl">
             <p className="">L’édition et la direction de la publication du Site est assurée par Carole Bethuel, domiciliée à Paris, et l'adresse e-mail: carolebethuel@wanadoo.fr .</p>
-            <p className="">Le site Web est codé et développé par sociale Nguyen Dev , numéro Siret : 94782606100014, email: mr.nguyencoder@gmail.com </p>
+            <p className="">Le site Web est codé et développé par Nguyen Dev , numéro de téléphone: 0782885224, numéro Siret : 94782606100014, email: mr.nguyencoder@gmail.com </p>
             <p className="">Ci-après l'"Editeur"</p>
         </div>
 
